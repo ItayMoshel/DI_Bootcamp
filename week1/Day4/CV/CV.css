@@ -1,0 +1,11 @@
+html , body {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+background-image: url(https://images.wallpapersden.com/image/download/the-mountain_bGZnbW6UmZqaraWkpJRnamtlrWZpaWU.jpg);
+background-size: cover;
+background-repeat: no-repeat;
+font-family: 'Nunito', sans-serif;
+}
