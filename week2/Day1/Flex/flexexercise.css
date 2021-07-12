@@ -1,0 +1,76 @@
+html , body {
+    padding: 0px;
+    margin: 0px;
+}
+
+.container {
+    width: 100%;
+    height: 788px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: space-between;
+    flex: 3;
+}
+
+.container > div {
+    font-size: 5em;
+}
+
+.one {
+    background-color: darkslateblue;
+    width: 60%;
+    display: flex;
+    justify-content: center;
+}
+
+.two {
+    background-color: darkslategrey;
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.three {
+    background-color: dimgray;
+    width: 60%;
+    display: flex;
+    justify-content: center;
+}
+
+.container2 {
+    height: auto;
+    padding: 18px 7px;
+    display: flex;
+    width: 40%;
+    border: 3px solid rgb(252, 182, 170);
+}
+
+.four {
+    background-color: plum;
+    color: white;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.five {
+    background-color: lightblue;
+    color: white;
+    flex: 5;
+    display: flex;
+    justify-content: center;
+
+}
+
+.six {
+    background-color: rgb(255, 142, 122);
+    color: white;
+    flex: 5;
+    display: flex;
+    justify-content: center;
+
+}
