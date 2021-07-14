@@ -5,8 +5,9 @@ body {
 .container {
     display: grid;
     grid-gap: 20px;
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(5, 1fr);
     border: 10px solid darkgray;
+    height: 1200px;
     
 }
 
@@ -17,4 +18,38 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.item1 , .item9 {
+    grid-column: span 5;
+}
+
+.item2 {
+    grid-column: span 2;
+    grid-row: span 3;
+}
+
+.item3 {
+    grid-column: span 3;
+    grid-row: span 5;
+}
+
+.item4 {
+    grid-column: span 2;
+    grid-row: span 4;
+}
+
+.item5 {
+    grid-column: span 3;
+    grid-row: span 2;
+}
+
+.item6 {
+    grid-column: span 4;
+    grid-row: span 2;
+}
+
+.item7 {
+    grid-column: span 1;
+    grid-row: span 2;
 }
