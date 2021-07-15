@@ -9,7 +9,6 @@ body {
     background-size: cover;
     background-attachment: fixed;
     color: darkslategrey;
-    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
     width: 100%;
     height: 600px;
     display: flex;
@@ -17,6 +16,14 @@ body {
     justify-content: center;
     align-items: center;
     
+}
+
+.headbg h1 {
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+.headbg span {
+    font-size: 1.3em;
 }
 
 .nav-item {
@@ -100,6 +107,3 @@ body {
     background-color: rosybrown;
 }
 
-.form {
-    width: 40%;
-}
