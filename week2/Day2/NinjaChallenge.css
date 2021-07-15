@@ -1,0 +1,32 @@
+html , body {
+    margin: 0px;
+    padding: 0px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(16, 1fr);
+    grid-template-rows: repeat(16, 1fr);
+    grid-gap: 4px;
+}
+
+.item1 , .item2 , .item3 , .item4 {
+    width: 55px;
+    height: 55px;
+}
+
+.item1 {
+    background-color: darkcyan;
+}
+
+.item2 {
+    background-color: darkgoldenrod;
+}
+
+.item3 {
+    background-color: darkgray;
+}
+
+.item4 {
+    background-color: darkred;
+}
