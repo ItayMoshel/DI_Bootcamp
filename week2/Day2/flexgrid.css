@@ -1,0 +1,82 @@
+html , body {
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    font-family: 'Courier Prime', monospace;
+    background-color: darkgrey;
+}
+
+header {
+    font-size: 1.3em;
+}
+
+.nav0 {
+    display: flex;
+    background-color: darkslategray;
+    border-radius: 5px;
+    border: 1px solid darkcyan;
+}
+
+.nav3 {
+    display: inline;
+    margin: 15px;
+    padding: 10px;
+    color: silver;
+}
+
+.nav3:hover {
+    text-shadow: 2px 2px black;
+    cursor: pointer;
+}
+
+.mid {
+    background-color: rgb(117, 2, 2);
+    border-radius: 5px;
+    border: 1px solid rgb(138, 9, 9);
+    width: 100%;
+    height: 450px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.last {
+    border-radius: 5px;
+    border: 1px solid rgb(43, 39, 39);
+}
+
+.container {
+    /* display: grid;
+    grid-template-columns: repeat(4 ,4fr);
+    grid-template-rows: repeat(2, 2fr);
+    grid-gap: 30px; */
+    display: flex;
+    justify-content: space-around;
+    align-content: space-around;
+    flex-wrap: wrap;
+    margin: 10px 0px;
+}
+
+.item {
+    width: 250px;
+    height: 250px;
+    background-color: rgba(43, 39, 39, 0.9);
+    margin: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.lastandugly {
+    background-color: sandybrown;
+    border-radius: 5px;
+    border: 1px solid gold;
+}
+
+.lastdiv {
+    display: flex;
+    justify-content: center;
+}
