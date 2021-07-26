@@ -26,3 +26,18 @@ let num2 = prompt("choose anthoer that you would like to calculate.");
 let sum = Number(num1) + Number(num2);
 console.log(sum);
 alert("This is you'r sum: " + sum);
+
+let userNumber = Number(prompt("pleasse insert a number."));
+
+console.log(typeof(userNumber));
+
+if (userNumber < 2)
+    console.log("Boom");
+else if ((userNumber % 2 === 0) && (userNumber % 5 === 0))
+    console.log("B" + "O".repeat(userNumber) + "M!");    
+else if (userNumber % 5 === 0)
+    console.log("B" + "O".repeat(userNumber) + "M");    
+else if (userNumber % 2 === 0)
+    console.log("B" + "o".repeat(userNumber) + "m!")
+else if (userNumber > 2)
+    console.log("B" + "o".repeat(userNumber) + "m");
