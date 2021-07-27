@@ -185,20 +185,35 @@
 //     return (a > b) ? a : b;
 // }
 
-let userNumber = Number(prompt("pleasse insert a number."));
+// let userNumber = Number(prompt("pleasse insert a number."));
 
-console.log(typeof(userNumber));
+// console.log(typeof(userNumber));
 
-if (userNumber < 2)
-    console.log("Boom");
-else if ((userNumber % 2 === 0) && (userNumber % 5 === 0))
-    console.log("B" + "O".repeat(userNumber) + "M!");    
-else if (userNumber % 5 === 0)
-    console.log("B" + "O".repeat(userNumber) + "M");    
-else if (userNumber % 2 === 0)
-    console.log("B" + "o".repeat(userNumber) + "m!")
-else if (userNumber > 2)
-    console.log("B" + "o".repeat(userNumber) + "m");
+// if (userNumber < 2)
+//     console.log("Boom");
+// else if ((userNumber % 2 === 0) && (userNumber % 5 === 0))
+//     console.log("B" + "O".repeat(userNumber) + "M!");    
+// else if (userNumber % 5 === 0)
+//     console.log("B" + "O".repeat(userNumber) + "M");    
+// else if (userNumber % 2 === 0)
+//     console.log("B" + "o".repeat(userNumber) + "m!")
+// else if (userNumber > 2)
+//     console.log("B" + "o".repeat(userNumber) + "m");
+
+// let indexNumber = Number(prompt("please insert a number."));
+
+// if ((indexNumber % 3 === 0) && (indexNumber % 5 === 0))
+//     console.log("FizzBuzz!");
+// else if (indexNumber % 5 === 0)
+//     console.log("Buzz!");
+// else if (indexNumber % 3 === 0)
+//     console.log("Fizz!");
+// else if ((indexNumber % 3 !== 0) && (indexNumber % 5 !== 0))
+//     console.log(indexNumber);
+
+
+
+
 
 
 
