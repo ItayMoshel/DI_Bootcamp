@@ -43,19 +43,3 @@
 // let show = x => x ** 3
 // console.log(show(3));
 
-function infoAboutMe() {
-    console.log("itay moshel, 27 from israel.");
-}
-infoAboutMe();
-
-
-function infoAboutPerson(personName, personAge, personFavoriteColor) {
-    console.log("You'r name is: " + personName + ", you are " + personAge + " years old, and " + personFavoriteColor + " is you'r favorite color.")
-}
-infoAboutPerson("David", 45, "blue");
-infoAboutPerson("Josh", 12, "yellow");
-
-// let words = prompt("Please wright several words seperated by comma.");
-// var wordsList = words.split(",");
-// console.log(wordsList);
-
