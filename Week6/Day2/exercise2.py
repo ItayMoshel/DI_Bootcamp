@@ -12,6 +12,6 @@ elif user_input == 12 or user_input <= 2: #  <==== is this the best way to write
     print("Winter")
 
 
-    
+
 
 
