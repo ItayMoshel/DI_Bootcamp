@@ -1,7 +1,6 @@
-# Exercise ONE
 import random
 
-
+# Exercise ONE
 def display_message():
     print("Now learning PYTHON.")
 display_message()
