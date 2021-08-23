@@ -21,6 +21,9 @@ class Person():
         self.name = name
         self.age = age
 
+    def show_details(self):
+        print(f"hey, my name is {self.name}")
+
 class point():
     def __init__(self, x, y): # The goal of the init method here is to define two attributes to the point
         self.x = x
@@ -33,6 +36,7 @@ other_shelter_dog = Dog("Jim")
 other_shelter_dog.rename("Lex")
 other_shelter_dog.walk(500)
 Person1 = Person("Jimmy", 30)
+Person1.show_details()
 p = point(3, 4)
 # Object: shelter_dog.    Class: Dog()
 
@@ -46,3 +50,19 @@ shelter_dog.color = "Brown"
 print("p.x is:", p.x) # The output will be: "p.x is: 3"
 print("p.y is:", p.y) # The output will be: "p.x is: 4"
 
+
+
+class Computer():
+    def description(self, name):
+        print(f"I am a computer. my name is {name}")
+        print(self)
+
+mac_computer = Computer()
+mac_computer.brand = "Apple"
+print(mac_computer.brand)
+
+dell_computer = Computer()
+
+Computer.description(dell_computer, "Mark")
+
+dell_computer.description("Mark")
