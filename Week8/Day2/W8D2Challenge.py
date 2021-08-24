@@ -5,6 +5,7 @@ class Farm():
 
     def add_animal(self, animal_type = 'str', num_of_animal=1):
         self.animal_dictionary[animal_type] = num_of_animal
+        return num_of_animal
 
 
     def get_info(self):
