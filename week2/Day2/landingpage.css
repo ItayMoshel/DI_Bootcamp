@@ -1,4 +1,46 @@
-.shimi {
-    display: grid;
-    grid-template-columns: repeat(3 , 1fr);
+html, body{
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: grey;
+}
+
+#head {
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.num {
+    font-size: 2em;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+}
+
+.bottom {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 100px;
+}
+
+#mid {
+    margin-top: 50px;
+}
+
+.bcontainer {
+    border-radius: 2px;
+    box-shadow: 3px 3.4px 3px #3a3939;
+    background-color: white;
+}
+
+.bb {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
 }

@@ -1,4 +1,35 @@
-.container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+section {
+    border: 2px solid black;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.color {
+    height: 100px;
+    width: 40vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 70px;
+
+}
+#red {
+    background-color: red;
+}
+#blue {
+    background-color: blue;
+}
+#black {
+    background-color: black;
+}
+#yellow {
+    background-color: yellow;
+}
+#orange {
+    background-color: orange;
+}
+#pink {
+    background-color: pink;
 }
