@@ -1,7 +1,7 @@
 from translate import Translator
 
-french_words = ["hello", "see you later", "chair", "desk"]
+english_words = ["hello", "see you later", "chair", "desk"]
 translator = Translator(to_lang="he")
-translation = translator.translate(french_words[2])
+translation = translator.translate(english_words[2])
 print(translation)
 
