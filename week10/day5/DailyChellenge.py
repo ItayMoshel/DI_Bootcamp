@@ -3,10 +3,10 @@ import requests
 
 def loadingtime(link):
     time = requests.get(link).elapsed.total_seconds()
-    print(time)
+    return time
 
 
-loadingtime("https://www.ynet.co.il/")
-loadingtime("https://www.google.com/")
-loadingtime("https://www.youtube.com/")
-loadingtime("https://www.imdb.com/")
+print(loadingtime("https://www.ynet.co.il/"))
+print(loadingtime("https://www.google.com/"))
+print(loadingtime("https://www.youtube.com/"))
+print(loadingtime("https://www.imdb.com/"))
