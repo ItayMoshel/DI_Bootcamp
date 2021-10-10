@@ -1,13 +1,6 @@
-import json
-from flask import Flask
-import requests
+import pokebase as pb
 
-url = "https://pokeapi.co/api/v2/pokemon/ditto"
-
-
-
-
-
-app = Flask(__name__)
+s1 = pb.SpriteResource('pokemon', 17)
+charmander = pb.pokemon('charmander')
 
 
