@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CV Maker</title>
+</head>
+<body>
+    <h1>Header.</h1>
+    <form method="POST">
+        {{ form.hidden_tag() }}
+
+        {{ form.firstname.label }}
+        {{ form.firstname(size=20) }}
+
+        {{ form.lastname.label }}
+        {{ form.lastname(size=20) }}
+
+        {{ form.age.label }}
+        {{ form.age(size=3) }}
+
+        {{ form.experience.label }}
+        {{ form.experience(size=32) }}
+
+        {{ form.city.label }}
+        {{ form.city(size=32) }}
+
+        {{ form.submit() }}
+    </form>
+
+</body>
+</html>
