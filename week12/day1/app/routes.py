@@ -1,7 +1,7 @@
 # First, we are in a different file, so we need to import the app
 import flask
 from . import app  # app.app is package_name.variable_name
-from day1.app.forms import Form
+from app.forms import Form
 
 
 @app.route("/in")
