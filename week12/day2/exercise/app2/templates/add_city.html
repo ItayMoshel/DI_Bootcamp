@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='style.css')}}" />
+</head>
+<body>
+    <form method="POST">
+        {{ form.hidden_tag() }}
+
+        {{ form.cityname.label }}
+        {{ form.cityname(size=20) }}
+
+        {{ form.citycountry.label }}
+        {{ form.citycountry(size=20) }}
+
+        {{ form.numofinhabitats.label }}
+        {{ form.numofinhabitats(size=20) }}
+
+        {{ form.cityarea.label }}
+        {{ form.cityarea(size=32) }}
+
+        {{ form.latitude.label }}
+        {{ form.latitude(size=32) }}
+
+        {{ form.longitude.label }}
+        {{ form.longitude(size=32) }}
+
+        {{ form.is_capital.label }}
+        {{ form.is_capital(size=32) }}
+
+        {{ form.submit() }}
+    </form>
+</body>
+</html>

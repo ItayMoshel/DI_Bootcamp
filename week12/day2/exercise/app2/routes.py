@@ -1,34 +1,9 @@
-from flask import Flask, render_template, render_template_string
-from .form import Form
+from flask import Flask, render_template
+
 import flask
 
-app = Flask(__name__)
-
-form_template = """
-    <form method="POST">
-    {{ form.hidden_tag() }}
-
-    {{ form.firstname.label }}
-    {{ form.firstname(size=20) }}
-
-    {{ form.lastname.label }}
-    {{ form.lastname(size=20) }}
-
-    {{ form.age.label }}
-    {{ form.age(size=3) }}
-
-    {{ form.username.label }}
-    {{ form.username(size=32) }}
-
-    {{ form.password.label }}
-    {{ form.password(size=32) }}
-
-    {{ form.bio.label }}
-    {{ form.bio(size=240) }}
-
-    {{ form.submit() }}
-    </form>
-    """
+from app2 import app
+from app2.form import Form
 
 
 @app.route("/")
@@ -36,8 +11,8 @@ def home():
     return render_template("base.html")
 
 
-@app.route('/myform', methods=("GET", "POST"))
-def myform():
+@app.route('/add-city', methods=("GET", "POST"))
+def add_city():
     form = Form()
     if form.validate_on_submit():  # Check if the form has been filled
         cityname = form.cityname.data
@@ -52,4 +27,10 @@ def myform():
         print("Number of inhabitants : ", numofinhabitants)
 
         return flask.redirect('/')
-    return render_template_string(form_template, form=form)
+    return render_template("add_city.html", form=form)
+
+
+@app.errorhandler(404)
+def page_not_found(error):
+    print(error)
+    return render_template("404.html"), 404
