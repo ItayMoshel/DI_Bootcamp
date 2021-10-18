@@ -1,0 +1,1 @@
+SELECT * FROM actors WHERE number_oscars >4;

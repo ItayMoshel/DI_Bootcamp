@@ -10,3 +10,4 @@ def rand_key(num1: int, num2: int):
 
 class Config:
     SECRET_KEY = rand_key(0, 256)
+
