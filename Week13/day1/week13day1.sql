@@ -1,1 +1,3 @@
-SELECT * FROM actors WHERE number_oscars >4;
+SELECT * FROM actors;
+
+SELECT COUNT(*) FROM actors;
